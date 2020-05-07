@@ -1,0 +1,23 @@
+{
+  "name": "mingou_app",
+  "version": "1.0.0",
+  "description": "铭欧智能",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "mingou"
+  ],
+  "author": "zhoudi",
+  "license": "ISC",
+  "dependencies": {
+    "ch-koa": "^1.2.1",
+    "commander": "^5.1.0",
+    "decimal.js": "^10.2.0",
+    "ioredis": "^4.16.3",
+    "lodash": "^4.17.15",
+    "moment": "^2.25.3",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.7"
+  }
+}

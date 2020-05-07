@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+const Redis = require('ioredis');
+const config = require('../config/application');
+const ChKoa = require('ch-koa');
+
+ChKoa(config.App);
