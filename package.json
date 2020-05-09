@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "铭欧智能",
   "scripts": {
+    "start": "node bin/application",
     "test": "test"
   },
   "keywords": [
@@ -12,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "ch-koa": "^1.2.1",
+    "ch-vendor": "^1.0.7",
     "commander": "^5.1.0",
     "decimal.js": "^10.2.0",
     "ioredis": "^4.16.3",

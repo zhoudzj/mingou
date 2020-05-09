@@ -1,0 +1,77 @@
+[2020-05-09T10:42:57.252] [ERROR] response - /house/list request operate an no-base-error, name: SequelizeDatabaseError, message: Table 'mingou.house' doesn't exist
+[2020-05-09T10:42:57.254] [ERROR] response - SequelizeDatabaseError: Table 'mingou.house' doesn't exist
+    at Query.formatError (E:\myRepository\mingou\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (E:\myRepository\mingou\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (E:\myRepository\mingou\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\myRepository\mingou\node_modules\mysql2\lib\connection.js:417:32)
+    at PacketParser.onPacket (E:\myRepository\mingou\node_modules\mysql2\lib\connection.js:75:12)
+    at PacketParser.executeStart (E:\myRepository\mingou\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (E:\myRepository\mingou\node_modules\mysql2\lib\connection.js:82:25)
+    at Socket.emit (events.js:311:20)
+    at addChunk (_stream_readable.js:294:12)
+    at readableAddChunk (_stream_readable.js:275:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2020-05-09T18:19:48.917] [ERROR] response - /house/create request operate an no-base-error, name: SequelizeValidationError, message: notNull Violation: house.status cannot be null,
+notNull Violation: house.type cannot be null
+[2020-05-09T18:19:48.920] [ERROR] response - SequelizeValidationError: notNull Violation: house.status cannot be null,
+notNull Violation: house.type cannot be null
+    at E:\myRepository\mingou\node_modules\sequelize\lib\instance-validator.js:74:15
+    at tryCatcher (E:\myRepository\mingou\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:729:18)
+    at Promise._fulfill (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:673:18)
+    at PromiseArray._resolve (E:\myRepository\mingou\node_modules\bluebird\js\release\promise_array.js:127:19)
+    at PromiseArray._promiseFulfilled (E:\myRepository\mingou\node_modules\bluebird\js\release\promise_array.js:145:14)
+    at Promise._settlePromise (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:609:26)
+    at Promise._settlePromise0 (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-09T18:23:08.590] [ERROR] response - /house/create request operate an no-base-error, name: SequelizeValidationError, message: notNull Violation: house.status cannot be null,
+notNull Violation: house.type cannot be null
+[2020-05-09T18:23:08.593] [ERROR] response - SequelizeValidationError: notNull Violation: house.status cannot be null,
+notNull Violation: house.type cannot be null
+    at E:\myRepository\mingou\node_modules\sequelize\lib\instance-validator.js:74:15
+    at tryCatcher (E:\myRepository\mingou\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:729:18)
+    at Promise._fulfill (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:673:18)
+    at PromiseArray._resolve (E:\myRepository\mingou\node_modules\bluebird\js\release\promise_array.js:127:19)
+    at PromiseArray._promiseFulfilled (E:\myRepository\mingou\node_modules\bluebird\js\release\promise_array.js:145:14)
+    at Promise._settlePromise (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:609:26)
+    at Promise._settlePromise0 (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-09T18:23:44.045] [ERROR] response - /house/create request operate an no-base-error, name: SequelizeValidationError, message: notNull Violation: house.status cannot be null,
+notNull Violation: house.type cannot be null
+[2020-05-09T18:23:44.051] [ERROR] response - SequelizeValidationError: notNull Violation: house.status cannot be null,
+notNull Violation: house.type cannot be null
+    at E:\myRepository\mingou\node_modules\sequelize\lib\instance-validator.js:74:15
+    at tryCatcher (E:\myRepository\mingou\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:729:18)
+    at Promise._fulfill (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:673:18)
+    at PromiseArray._resolve (E:\myRepository\mingou\node_modules\bluebird\js\release\promise_array.js:127:19)
+    at PromiseArray._promiseFulfilled (E:\myRepository\mingou\node_modules\bluebird\js\release\promise_array.js:145:14)
+    at Promise._settlePromise (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:609:26)
+    at Promise._settlePromise0 (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (E:\myRepository\mingou\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)

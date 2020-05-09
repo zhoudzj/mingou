@@ -1,4 +1,4 @@
-const house = global.Controller.house;
+const ctl = global.Controller.house;
 
 module.exports = {
     prefix: 'house',         //模块路由前缀(默认:'', 无前缀)
@@ -11,7 +11,17 @@ module.exports = {
                 // 'id': ['用户编号', 'required', 'integer', {'min': 1000}],
                 // 'school': ['学校', 'string', {'default': '杭州学军中学'}]
             },
-            controller: house.find    //可以使用预先加载的CONTROLLER_PATH中的函数, 当然也可以传入函数。
+            controller: ctl.list    //可以使用预先加载的CONTROLLER_PATH中的函数, 当然也可以传入函数。
+        },
+        {
+            path: 'create',
+            method: 'post',
+            validator: {
+                'uid': ['社区编号', 'required', 'integer'],
+                'status': ['社区状态', 'required', 'integer'],
+                'type':['社区类型', 'required', 'integer']
+            },
+            controller: ctl.create
         }
     ]
 };

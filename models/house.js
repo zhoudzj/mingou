@@ -11,7 +11,7 @@ module.exports = (Sequelize, DataTypes) => {
         status: {
             type: DataTypes.TINYINT.UNSIGNED,
             allowNull: false,
-            comment: '流水状态'
+            comment: '社区状态'
         },
         type: {
             type: DataTypes.TINYINT.UNSIGNED,
@@ -28,9 +28,13 @@ module.exports = (Sequelize, DataTypes) => {
     });
     
     //成功
-    model.STATUS_SUCCEED = 1;
+    model.STATUS_OPEN= 1;
     //失败
-    model.STATUS_FAILED = 2;
+    model.STATUS_CLOSE = 2;
+
+    model.sync({
+        force:false
+    })
 
     return model;
 };

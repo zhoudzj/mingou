@@ -1,21 +1,22 @@
 #!/usr/bin/env node
 
-const Redis = require('ioredis');
+const ioRedis = require('ioredis');
 const config = require('../config/application');
 const ChKoa = require('ch-koa');
-const Mysql = require('ch-vendor/sequelize');
+const sequelize = require('ch-vendor/sequelize');
 
-const redis = new Redis(config.Redis);
-const mysql = new Mysql(config.Mysql);
+const Redis = new ioRedis(config.Redis);
+const Mysql = sequelize(config.Mysql);
 
 Mysql.authenticate()
     .then(() => {
-        config.App.resources = { mysql, redis }
+        config.App.resources = { Mysql, Redis }
         ChKoa(config.App);
         global.Log.warn(global.AppConfig); //全局对象下将自动挂载 Log日志句柄和AppConfig完整配置(结构如上)
         console.warn('Current enviroment: ' + process.env.NODE_ENV || 'development');
-
     }).catch(e => {
+        console.log(e)
+
         Mysql.close();
         process.exit(0);
     });
