@@ -4,7 +4,7 @@ const Mysql = global.Mysql;
 const Op = Mysql.Op;
 const houseModel = Mysql.models.house;
 const redis = global.Redis;
-
+  
 module.exports = {
     //支持的token列表
     async list(ctx) {
@@ -34,10 +34,7 @@ module.exports = {
     },
     async create(ctx) {
         let attributes = ctx.attributes;
-        console.log(redis);
-
         redis.set("foo","bar2");
-// console.log(redis.get("foo"));
         const result = await houseModel.create({
                 id: attributes.uid,
                 status: attributes.status,
