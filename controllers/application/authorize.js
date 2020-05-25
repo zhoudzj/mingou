@@ -1,5 +1,6 @@
 const {AppError} = require('ch-error');
 const Cache = require('../../controllers/common/cache');
+const moment = require('moment');
 
 const Mysql = global.Mysql;
 const Op = Mysql.Op;
@@ -21,13 +22,26 @@ module.exports = {
         // let pwd = User.decryptPassword(attributes.password);
         // let pwdHash = Helper.Md5(pwd, user.salt);
         // if (pwdHash !== user.password) throw new AppError(11006, '密码错误');
-        // let token = await Cache.setTokenInfo(user);
+        console.log('==========',user);
+        let token = await Cache.setTokenInfo(user);
         console.warn('xx==xx==',token);
         ctx.body.data = { token };
     },
     async registerByPassword(ctx) {
         console.log('==========',ctx.request.body);
         let attributes = ctx.request.body;
+        let now = moment().unix();
+        let result = await userModel.create({
+            name: attributes.userName,
+            password: attributes.password,
+            type: userModel.TYPE_NORMAL,
+            add_time:now
+        });
+        if (!result) throw new AppError(11004, '注册失败');
+        ctx.body.data = {};
+    },
+    async getUserInfo(ctx) {
+        
     },
     //退出登录
     async signOut(ctx) {
