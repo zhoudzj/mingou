@@ -1,0 +1,969 @@
+[2020-05-24T16:31:37.188] [WARN] server - Server Listening HTTP On port:6000
+[2020-05-24T16:31:37.191] [WARN] server - {
+  port: 6000,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-24T17:27:48.134] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-24T17:27:48.137] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-24T17:28:33.645] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午5:28:33, /favicon.ico operate GET request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","sec-fetch-dest":"image","accept":"image/webp,image/apng,image/*,*/*;q=0.8","sec-fetch-site":"same-origin","sec-fetch-mode":"no-cors","referer":"http://localhost:8001/house/list","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {} 
+response info: {"code":1301,"message":"请先登陆","data":null,"error":"请先登陆"} 
+error name: AppError 
+
+[2020-05-24T17:28:46.469] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午5:28:46, /favicon.ico operate GET request failed 
+header info: {"host":"127.0.0.1:8001","connection":"keep-alive","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","sec-fetch-dest":"image","accept":"image/webp,image/apng,image/*,*/*;q=0.8","sec-fetch-site":"same-origin","sec-fetch-mode":"no-cors","referer":"http://127.0.0.1:8001/house/list","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {} 
+response info: {"code":1301,"message":"请先登陆","data":null,"error":"请先登陆"} 
+error name: AppError 
+
+[2020-05-24T17:30:11.503] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午5:30:11, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"36","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"sss","password":"1234"} 
+response info: {"code":1301,"message":"请先登陆","data":null,"error":"请先登陆"} 
+error name: AppError 
+
+[2020-05-24T18:04:28.157] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午6:04:28, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"单位","password":"1233"} 
+response info: {"code":1301,"message":"请先登陆","data":null,"error":"请先登陆"} 
+error name: AppError 
+
+[2020-05-24T18:06:45.446] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午6:06:45, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"迪克","password":"1233"} 
+response info: {"code":1301,"message":"请先登陆","data":null,"error":"请先登陆"} 
+error name: AppError 
+
+[2020-05-24T18:09:31.383] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-24T18:09:31.386] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-24T18:09:48.186] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午6:09:48, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"46","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"大胃王若","password":"12323"} 
+response info: {"code":1301,"message":"请先登录","data":null,"error":"请先登录"} 
+error name: AppError 
+
+[2020-05-24T18:28:36.779] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-24T18:28:36.782] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-24T18:28:45.320] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午6:28:45, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"46","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"大胃王若","password":"12323"} 
+response info: {"code":1301,"message":"请先登录","data":null,"error":"请先登录"} 
+error name: AppError 
+
+[2020-05-24T18:34:07.876] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-24T18:34:07.879] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-24T18:34:13.577] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T18:34:13.581] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T18:34:13.584] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午6:34:13, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"46","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"大胃王若","password":"12323"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T18:34:13.626] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T18:34:13.626] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T18:34:13.631] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午6:34:13, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"46","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"大胃王若","password":"12323"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T18:35:33.700] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T18:35:33.701] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T18:35:33.702] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午6:35:33, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"46","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"大胃王若","password":"12323"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T18:45:11.040] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T18:45:11.041] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T18:45:11.041] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午6:45:11, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"46","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"大胃王若","password":"12323"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T19:24:35.610] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T19:24:35.610] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T19:24:35.611] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:24:35, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"44","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"说不好","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T19:27:04.969] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T19:27:04.969] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T19:27:04.970] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:27:04, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"38","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"单位","password":"233"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T19:30:30.280] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T19:30:30.281] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T19:30:30.285] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:30:30, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"38","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"单位","password":"233"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T19:30:57.565] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T19:30:57.565] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T19:30:57.566] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:30:57, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"38","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"单位","password":"233"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T19:31:44.278] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T19:31:44.279] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T19:31:44.279] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:31:44, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"fewr","password":"132323"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T19:34:06.501] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T19:34:06.501] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T19:34:06.502] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:34:06, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"40","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"发热","password":"23232"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T19:37:02.487] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T19:37:02.487] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T19:37:02.488] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:37:02, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"38","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"multipart/form-data","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T19:38:14.602] [ERROR] response - /user/login request operate an no-base-error, name: Error, message: WHERE parameter "mobile" has invalid "undefined" value
+[2020-05-24T19:38:14.602] [ERROR] response - Error: WHERE parameter "mobile" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-05-24T19:38:14.603] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:38:14, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"38","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"rwe","password":"213323"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"WHERE parameter \"mobile\" has invalid \"undefined\" value"} 
+error name: SystemError 
+
+[2020-05-24T19:41:55.497] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-24T19:41:55.499] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-24T19:42:07.462] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:42:07, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"38","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"rwe","password":"213323"} 
+response info: {"code":11004,"message":"用户不存在","data":null,"error":"用户不存在"} 
+error name: AppError 
+
+[2020-05-24T19:45:00.595] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-24T19:45:00.598] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-24T19:45:10.944] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:45:10, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"37","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"的","password":"23232"} 
+response info: {"code":11004,"message":"用户不存在","data":null,"error":"用户不存在"} 
+error name: AppError 
+
+[2020-05-24T19:46:41.594] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-24T19:46:41.597] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-24T19:46:48.957] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午7:46:48, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"37","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"的","password":"23232"} 
+response info: {"code":11004,"message":"用户不存在","data":null,"error":"用户不存在"} 
+error name: AppError 
+
+[2020-05-24T20:49:15.641] [ERROR] response - /user/login request operate an no-base-error, name: SequelizeDatabaseError, message: read ETIMEDOUT
+[2020-05-24T20:49:15.641] [ERROR] response - SequelizeDatabaseError: read ETIMEDOUT
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Connection._notifyError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:197:21)
+    at Connection._handleFatalError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:156:10)
+    at Connection._handleNetworkError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:169:10)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[2020-05-24T20:49:15.642] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午8:49:15, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"44","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"大胃王","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"read ETIMEDOUT"} 
+error name: SystemError 
+
+[2020-05-24T20:51:59.582] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午8:51:59, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"44","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"大胃王","password":"123456"} 
+response info: {"code":11004,"message":"用户不存在","data":null,"error":"用户不存在"} 
+error name: AppError 
+
+[2020-05-24T20:54:35.197] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午8:54:35, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"40","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"Admin","password":"123456"} 
+response info: {"code":11004,"message":"用户不存在","data":null,"error":"用户不存在"} 
+error name: AppError 
+
+[2020-05-24T22:01:21.991] [ERROR] response - /user/login request operate an no-base-error, name: ReferenceError, message: User is not defined
+[2020-05-24T22:01:21.993] [ERROR] response - ReferenceError: User is not defined
+    at loginByPassword (/Users/Mark/mingou/controllers/application/authorize.js:23:19)
+    at async /Users/Mark/mingou/middlewares/application/token.js:17:18
+    at async /Users/Mark/mingou/node_modules/_ch-koa@1.2.1@ch-koa/format.js:29:13
+    at async bodyParser (/Users/Mark/mingou/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5)
+[2020-05-24T22:01:21.993] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午10:01:21, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"40","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"Admin","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"User is not defined"} 
+error name: SystemError 
+
+[2020-05-24T22:05:47.006] [ERROR] response - /user/login request operate an no-base-error, name: ReferenceError, message: User is not defined
+[2020-05-24T22:05:47.006] [ERROR] response - ReferenceError: User is not defined
+    at loginByPassword (/Users/Mark/mingou/controllers/application/authorize.js:23:19)
+    at async /Users/Mark/mingou/middlewares/application/token.js:17:18
+    at async /Users/Mark/mingou/node_modules/_ch-koa@1.2.1@ch-koa/format.js:29:13
+    at async bodyParser (/Users/Mark/mingou/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5)
+[2020-05-24T22:05:47.006] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午10:05:47, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"40","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"Admin","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"User is not defined"} 
+error name: SystemError 
+
+[2020-05-24T22:06:02.240] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-24T22:06:02.243] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-24T22:06:08.292] [ERROR] response - /user/login request operate a system Error: 缓存信息为空
+[2020-05-24T22:06:08.292] [ERROR] response - SystemError: 服务器内部错误
+    at Object.setTokenInfo (/Users/Mark/mingou/controllers/common/cache.js:47:46)
+    at loginByPassword (/Users/Mark/mingou/controllers/application/authorize.js:24:33)
+    at async /Users/Mark/mingou/middlewares/application/token.js:17:18
+    at async /Users/Mark/mingou/node_modules/_ch-koa@1.2.1@ch-koa/format.js:29:13
+    at async bodyParser (/Users/Mark/mingou/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5)
+[2020-05-24T22:06:08.293] [WARN] response - *************DEBUG**************** 
+time: 2020/5/24 下午10:06:08, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"40","accept":"application/json, text/plain, */*","sec-fetch-dest":"empty","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36","content-type":"application/json","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"Admin","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"缓存信息为空"} 
+error name: SystemError 
+

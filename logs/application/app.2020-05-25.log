@@ -1,0 +1,70 @@
+[2020-05-25T07:13:01.905] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-25T07:13:01.910] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-25T08:35:49.402] [WARN] response - *************DEBUG**************** 
+time: 2020/5/25 上午8:35:49, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"29","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"","password":""} 
+response info: {"code":1301,"message":"请先登录","data":null,"error":"请先登录"} 
+error name: AppError 
+
+[2020-05-25T08:35:58.557] [WARN] response - *************DEBUG**************** 
+time: 2020/5/25 上午8:35:58, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"29","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"","password":""} 
+response info: {"code":1301,"message":"请先登录","data":null,"error":"请先登录"} 
+error name: AppError 
+
