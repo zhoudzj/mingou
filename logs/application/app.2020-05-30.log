@@ -1,0 +1,2280 @@
+[2020-05-30T10:48:11.906] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T10:48:11.909] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T11:54:31.108] [ERROR] response - /user/register request operate an no-base-error, name: SequelizeDatabaseError, message: read ETIMEDOUT
+[2020-05-30T11:54:31.109] [ERROR] response - SequelizeDatabaseError: read ETIMEDOUT
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Connection._notifyError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:197:21)
+    at Connection._handleFatalError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:156:10)
+    at Connection._handleNetworkError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:169:10)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[2020-05-30T11:54:31.114] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 上午11:54:31, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"lisi","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"read ETIMEDOUT"} 
+error name: SystemError 
+
+[2020-05-30T11:55:34.881] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T11:55:34.883] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T12:08:51.953] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T12:08:51.955] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T12:18:29.218] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T12:18:29.221] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T12:38:13.059] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T12:38:13.061] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T12:38:20.403] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T12:38:20.406] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T12:41:44.053] [ERROR] response - /user/register request operate an no-base-error, name: SequelizeUniqueConstraintError, message: Validation error
+[2020-05-30T12:41:44.054] [ERROR] response - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:223:16)
+    at Execute.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:417:32)
+    at PacketParser.onPacket (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at Socket.Readable.push (_stream_readable.js:214:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2020-05-30T12:41:44.056] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午12:41:44, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"lisi","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"Validation error"} 
+error name: SystemError 
+
+[2020-05-30T13:34:32.677] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T13:34:32.680] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T13:35:03.338] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T13:35:03.343] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T13:35:27.192] [ERROR] response - /user/register request operate an no-base-error, name: SequelizeUniqueConstraintError, message: Validation error
+[2020-05-30T13:35:27.192] [ERROR] response - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:223:16)
+    at Execute.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:417:32)
+    at PacketParser.onPacket (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at Socket.Readable.push (_stream_readable.js:214:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2020-05-30T13:35:27.193] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午1:35:27, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"lisi","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"Validation error"} 
+error name: SystemError 
+
+[2020-05-30T16:38:07.435] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T16:38:07.438] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T16:46:04.163] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T16:46:04.166] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T16:47:54.922] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T16:47:54.926] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T16:48:07.699] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T16:48:07.703] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T16:52:28.730] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T16:52:28.732] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T16:52:45.649] [ERROR] response - /user/register request operate an no-base-error, name: ReferenceError, message: UniqueConstraintError is not defined
+[2020-05-30T16:52:45.650] [ERROR] response - ReferenceError: UniqueConstraintError is not defined
+    at registerByPassword (/Users/Mark/mingou/controllers/application/authorize.js:53:53)
+[2020-05-30T16:52:45.651] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午4:52:45, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"lisi","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"UniqueConstraintError is not defined"} 
+error name: SystemError 
+
+[2020-05-30T16:57:06.690] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T16:57:06.693] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T16:57:11.915] [ERROR] response - /user/register request operate an no-base-error, name: ReferenceError, message: SequelizeUniqueConstraintError is not defined
+[2020-05-30T16:57:11.916] [ERROR] response - ReferenceError: SequelizeUniqueConstraintError is not defined
+    at registerByPassword (/Users/Mark/mingou/controllers/application/authorize.js:53:53)
+[2020-05-30T16:57:11.917] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午4:57:11, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"lisi","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"SequelizeUniqueConstraintError is not defined"} 
+error name: SystemError 
+
+[2020-05-30T16:57:31.070] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T16:57:31.073] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:02:01.195] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:02:01.199] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:05:08.816] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:05:08.819] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:07:28.091] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:07:28.094] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:15:17.564] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:15:17.567] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:15:20.516] [ERROR] response - /user/register request operate an no-base-error, name: ReferenceError, message: UniqueConstraintError is not defined
+[2020-05-30T17:15:20.517] [ERROR] response - ReferenceError: UniqueConstraintError is not defined
+    at registerByPassword (/Users/Mark/mingou/controllers/application/authorize.js:53:56)
+[2020-05-30T17:15:20.518] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午5:15:20, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"lisi","password":"123456"} 
+response info: {"code":500,"message":"服务器内部错误","data":null,"error":"UniqueConstraintError is not defined"} 
+error name: SystemError 
+
+[2020-05-30T17:15:32.738] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:15:32.741] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:15:54.130] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:15:54.135] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:17:43.140] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:17:43.143] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:18:18.891] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:18:18.895] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:19:00.362] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:19:00.369] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:21:39.882] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:21:39.885] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T17:21:42.029] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午5:21:42, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"lisi","password":"123456"} 
+response info: {"code":11001,"message":"用户名已存在","data":null,"error":"用户名已存在"} 
+error name: AppError 
+
+[2020-05-30T17:23:02.759] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午5:23:02, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"39","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"lisi","password":"123456"} 
+response info: {"code":11001,"message":"用户名已存在","data":null,"error":"用户名已存在"} 
+error name: AppError 
+
+[2020-05-30T17:48:25.330] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T17:48:25.335] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T18:05:05.509] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午6:05:05, /user/register operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"40","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"frrrr","password":"123456"} 
+response info: {"code":11001,"message":"用户名已存在","data":null,"error":"用户名已存在"} 
+error name: AppError 
+
+[2020-05-30T19:32:33.677] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午7:32:33, /user/ operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"41","accept":"application/json, text/plain, */*","authorization":"1NxFzFgcxX7nHI6Of37SqtHpGW5VHRpwpWp0PGv+xPuP+F6K9XafDiuQXuPqvopISk2o1vXB+NKTPQU8hJwqoA==","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"zhoudi","password":"123456"} 
+response info: {"code":1301,"message":"请先登录","data":null,"error":"请先登录"} 
+error name: AppError 
+
+[2020-05-30T21:05:15.818] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午9:05:15, /user/logout operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"0","accept":"application/json, text/plain, */*","authorization":"dP0U1gpbZ00g7OVglItsO8l9ucT/nDiLsU+DoprN4QTLFqMX30gkdYDsKNpDYPLYZ/XueDjzJXt31rRGxg6YOA==","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/house","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {} 
+response info: {"code":1301,"message":"请先登录","data":null,"error":"请先登录"} 
+error name: AppError 
+
+[2020-05-30T21:49:21.123] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T21:49:21.126] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T21:51:45.182] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T21:51:45.185] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T21:52:21.322] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午9:52:21, /user/logout operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"0","accept":"application/json, text/plain, */*","authorization":"DkU1zNYBxKA9r5cJfrLTXx11O5bsA3cINHW/RW3lLnF/yiJ0OUORjq0MD2i+xRv4TNPGaJHJ2Vy/ngM0RYBMbA==","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/house","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {} 
+response info: {"code":1301,"message":"请先登录","data":null,"error":"请先登录"} 
+error name: AppError 
+
+[2020-05-30T22:00:51.686] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T22:00:51.689] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T22:01:15.952] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T22:01:15.955] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T22:01:20.784] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午10:01:20, /user/logout operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"0","accept":"application/json, text/plain, */*","authorization":"DkU1zNYBxKA9r5cJfrLTXx11O5bsA3cINHW/RW3lLnF/yiJ0OUORjq0MD2i+xRv4TNPGaJHJ2Vy/ngM0RYBMbA==","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/house","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {} 
+response info: {"code":1301,"message":"请先登录","data":null,"error":"请先登录"} 
+error name: AppError 
+
+[2020-05-30T22:02:57.787] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T22:02:57.790] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Authorization' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T22:25:18.134] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午10:25:18, /user/logout operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"0","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {} 
+response info: {"code":1302,"message":"Token超时, 请重新登录","data":null,"error":"Token超时, 请重新登录"} 
+error name: AppError 
+
+[2020-05-30T22:25:21.621] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午10:25:21, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"41","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"zhoudi","password":"123456"} 
+response info: {"code":1302,"message":"Token超时, 请重新登录","data":null,"error":"Token超时, 请重新登录"} 
+error name: AppError 
+
+[2020-05-30T22:30:32.422] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午10:30:32, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"41","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"zhoudi","password":"123456"} 
+response info: {"code":1302,"message":"Token超时, 请重新登录","data":null,"error":"Token超时, 请重新登录"} 
+error name: AppError 
+
+[2020-05-30T22:30:32.422] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午10:30:32, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"41","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"zhoudi","password":"123456"} 
+response info: {"code":1302,"message":"Token超时, 请重新登录","data":null,"error":"Token超时, 请重新登录"} 
+error name: AppError 
+
+[2020-05-30T22:31:15.722] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午10:31:15, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"41","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"zhoudi","password":"123456"} 
+response info: {"code":1302,"message":"Token超时, 请重新登录","data":null,"error":"Token超时, 请重新登录"} 
+error name: AppError 
+
+[2020-05-30T22:32:29.510] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T22:32:29.513] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Authorization' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T22:32:36.678] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午10:32:36, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"41","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"zhoudi","password":"123456"} 
+response info: {"code":1302,"message":"Token超时, 请重新登录","data":null,"error":"Token超时, 请重新登录"} 
+error name: AppError 
+
+[2020-05-30T22:33:51.169] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T22:33:51.172] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Authorization' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T22:34:23.147] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午10:34:23, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"41","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"zhoudi","password":"123456"} 
+response info: {"code":1302,"message":"Token超时, 请重新登录","data":null,"error":"Token超时, 请重新登录"} 
+error name: AppError 
+
+[2020-05-30T22:35:08.333] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T22:35:08.336] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Authorization' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T22:35:19.887] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午10:35:19, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"41","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"zhoudi","password":"123456"} 
+response info: {"code":1302,"message":"Token超时, 请重新登录","data":null,"error":"Token超时, 请重新登录"} 
+error name: AppError 
+
+[2020-05-30T22:36:18.658] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T22:36:18.660] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Authorization' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T22:36:27.751] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午10:36:27, /user/login operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"41","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {"userName":"zhoudi","password":"123456"} 
+response info: {"code":1302,"message":"Token超时, 请重新登录","data":null,"error":"Token超时, 请重新登录"} 
+error name: AppError 
+
+[2020-05-30T23:13:05.261] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T23:13:05.265] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Authorization' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T23:15:15.894] [WARN] server - Server Listening HTTP On port:8001
+[2020-05-30T23:15:15.907] [WARN] server - {
+  port: 8001,
+  path: '/Users/Mark/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Authorization' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/Users/Mark/mingou/controllers/application',
+  TASK_PATH: '/Users/Mark/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/Users/Mark/mingou/middlewares/application',
+  ROUTE_PATH: '/Users/Mark/mingou/routes/application',
+  MESSAGE_PATH: '/Users/Mark/mingou/messages/application',
+  LOG_PATH: '/Users/Mark/mingou/logs/application',
+  STATIC_PATH: '/Users/Mark/mingou/public/application'
+}
+[2020-05-30T23:16:46.637] [WARN] response - *************DEBUG**************** 
+time: 2020/5/30 下午11:16:46, /user/logout operate POST request failed 
+header info: {"host":"localhost:8001","connection":"keep-alive","content-length":"0","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"} 
+request body info: {} 
+response info: {"code":1301,"message":"请先登录","data":null,"error":"请先登录"} 
+error name: AppError 
+

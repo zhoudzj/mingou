@@ -22,7 +22,7 @@ const config = {
         middlewares: [{                //中间件配置(默认:[], 无中间件. 多个中间件按配置顺序挂载)
             file: 'token',              //中间件文件名(必选)
             switch: true,               //中间件开关(默认:true)
-            TokenName: 'Auth-Token'     //中间件自定义参数(可选)
+            TokenName: 'Authorization'     //中间件自定义参数(可选)
         }]
     }
 };

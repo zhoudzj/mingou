@@ -19,6 +19,7 @@ module.exports = (Sequelize, DataTypes) => {
         name: {
             type: DataTypes.STRING(50),
             allowNull: true,
+            unique: true,
             comment: '用户姓名'
         },
         mobile: {
@@ -60,7 +61,7 @@ module.exports = (Sequelize, DataTypes) => {
         }
     }, {
         tableName: 'user',
-        initialAutoIncrement: 12346,
+        initialAutoIncrement: 1000,
         indexes: [{
             name: 'mobile_area',
             method: 'BTREE',
