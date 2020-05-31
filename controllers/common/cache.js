@@ -1,18 +1,27 @@
 'use strict';
 
 const _ = require('lodash');
+const NC = require('node-cache');
+const Decimal = require('decimal.js');
 const moment = require('moment');
 const log4js = require('log4js');
 const {AppError, SystemError} = require('ch-error');
+const crypto = require('crypto');
 
 const Logger = log4js.getLogger('Cache:');
+const localCache = new NC();
+
 const Redis = global.Redis;
 const TOKEN_TIME = process.env.TOKEN_TIME || 86400 * 3;
+const LOCAL_TOKEN_TIME = 3600; //本地缓存token时间
+const LOCAL_RATE_TIME = 5; //本地缓存汇率时间
+const VERIFY_TIME = 3; //验证码校验最大次数
 const Key_User = 'user_';
 const NODE_ENV = process.env.NODE_ENV || 'production';
 
 function cashUserInfo(key, cacheInfo) {
     let value = JSON.stringify(cacheInfo);
+    localCache.set(key, cacheInfo, LOCAL_TOKEN_TIME);
     return Redis.set(key, value, 'EX', TOKEN_TIME);
 }
 
@@ -27,7 +36,15 @@ module.exports = {
     //获取缓存Token信息
     async getTokenInfo(token) {
         let key = Key_User + token;
-        let value = await Redis.get(key);
+                console.log('============1',new Date());
+
+        let value = localCache.get(key);
+                console.log('============2',new Date());
+
+        if (value) return value;
+        console.log(key);
+        value = await Redis.get(key);
+        console.log('============3',new Date());
         if (! value) return null;
         try {
             value = JSON.parse(value);
@@ -42,22 +59,25 @@ module.exports = {
         return value;
     },
     //设置Token缓存信息
-    async setTokenInfo(token, user) {
+    async setTokenInfo(user,token) {
         const now = moment().unix();
         if (! user || _.isEmpty(user)) throw new SystemError('缓存信息为空');
+        if (! token) {
+            token = crypto.randomBytes(64).toString('base64');
+            let flag = await this.getTokenInfo(token);
+            while (flag) {
+                token = crypto.randomBytes(64).toString('base64');
+                flag = await this.getTokenInfo(token);
+            }
+        }
         let cacheInfo = {
             id: user.id,
             type: user.type,
             partner: user.partner,
-            is_initator: user.is_initator,
-            inviter: user.inviter,
-            invite_code: user.invite_code,
             name: user.name || '',
-            id_number_last_six: user.id_number_last_six || '',
             area: user.area,
             mobile: user.mobile || '',
             email: user.email || '',
-            identify_status: user.identify_status,
             add_time: now,
             expires: now + TOKEN_TIME
         };

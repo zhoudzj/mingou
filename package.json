@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "铭欧智能",
   "scripts": {
-    "start": "node bin/application",
+    "start": "nodemon bin/application",
     "test": "test"
   },
   "keywords": [
@@ -20,6 +20,8 @@
     "lodash": "^4.17.15",
     "moment": "^2.25.3",
     "mysql2": "^2.1.0",
+    "node-cache": "^5.1.0",
+    "node-rsa": "^1.0.8",
     "sequelize": "^5.21.7"
   }
 }

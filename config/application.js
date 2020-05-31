@@ -7,7 +7,7 @@ const config = {
         min_connection: 3 //最小空闲连接数
     },
     App: {
-        port: 6000,                 //对外监听端口(默认:6000, 可修改)
+        port: 8001,                 //对外监听端口(默认:6000, 可修改)
         subpath: 'application',                //应用子目录(默认:'', 没有子目录)
         cors: {                     //是否在程序中处理跨域(默认:全过. 可以设置为false, 在Nginx中处理)
             origin: '*',                //是否限制请求来源(默认:'*'. 可以支持多个域名, 以逗号隔开)
@@ -22,7 +22,7 @@ const config = {
         middlewares: [{                //中间件配置(默认:[], 无中间件. 多个中间件按配置顺序挂载)
             file: 'token',              //中间件文件名(必选)
             switch: true,               //中间件开关(默认:true)
-            TokenName: 'Auth-Token'     //中间件自定义参数(可选)
+            TokenName: 'Authorization'     //中间件自定义参数(可选)
         }]
     }
 };
