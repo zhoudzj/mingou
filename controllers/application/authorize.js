@@ -51,10 +51,15 @@ module.exports = {
         catch (error) {
             if(error.name === 'SequelizeUniqueConstraintError'){
                 throw new AppError(11001, '用户名已存在');
+            }else{
+                throw new AppError(11004, '注册失败');
             };
         }
     },
-    async getUserInfo(ctx) {},
+    //获取用户信息
+    async getUserInfo(ctx) {
+        ctx.body.data = ctx.request.identity
+    },
     //退出登录
     async signOut(ctx) {
         console.log(ctx.request.identity);
