@@ -1,0 +1,135 @@
+[2020-05-22T17:23:59.002] [WARN] response - recv 404 request, path: /house/list, method: POST
+[2020-05-22T17:23:59.002] [WARN] response - *************DEBUG**************** 
+time: 5/22/2020, 5:23:59 PM, /house/list operate POST request failed 
+header info: {"host":"www.365tc.cn","x-read-ip":"183.129.134.34","x-forwarded-for":"183.129.134.34","connection":"close","content-length":"36","accept-language":"zh-CN,zh;q=0.9","accept-encoding":"gzip, deflate, br","referer":"http://localhost:3000/login","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","origin":"http://localhost:3000","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36","authorization":"null","accept":"application/json, text/plain, */*"} 
+request body info: {"userName":"233","password":"2323"} 
+response info: {"code":404,"message":"请求资源未找到","data":null,"error":"Not Found"} 
+error name: NotFoundError 
+
+[2020-05-22T17:27:59.353] [WARN] response - recv 404 request, path: /house/list, method: POST
+[2020-05-22T17:27:59.354] [WARN] response - *************DEBUG**************** 
+time: 5/22/2020, 5:27:59 PM, /house/list operate POST request failed 
+header info: {"host":"www.365tc.cn","x-read-ip":"183.129.134.34","x-forwarded-for":"183.129.134.34","connection":"close","content-length":"37","accept-language":"zh-CN,zh;q=0.9","accept-encoding":"gzip, deflate, br","referer":"http://localhost:3000/login","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","origin":"http://localhost:3000","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36","authorization":"null","accept":"application/json, text/plain, */*"} 
+request body info: {"userName":"2323","password":"1111"} 
+response info: {"code":404,"message":"请求资源未找到","data":null,"error":"Not Found"} 
+error name: NotFoundError 
+
+[2020-05-22T17:27:59.470] [WARN] response - *************DEBUG**************** 
+time: 5/22/2020, 5:27:59 PM, /login operate POST request failed 
+header info: {"host":"www.365tc.cn","x-read-ip":"183.129.134.34","x-forwarded-for":"183.129.134.34","connection":"close","content-length":"37","accept-language":"zh-CN,zh;q=0.9","accept-encoding":"gzip, deflate, br","referer":"http://localhost:3000/login","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","origin":"http://localhost:3000","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36","authorization":"null","accept":"application/json, text/plain, */*"} 
+request body info: {"userName":"2323","password":"1111"} 
+response info: {"code":1301,"message":"请先登陆","data":null,"error":"请先登陆"} 
+error name: AppError 
+
+[2020-05-22T17:29:01.008] [WARN] response - recv 404 request, path: /house/list, method: POST
+[2020-05-22T17:29:01.008] [WARN] response - *************DEBUG**************** 
+time: 5/22/2020, 5:29:01 PM, /house/list operate POST request failed 
+header info: {"host":"www.365tc.cn","x-read-ip":"183.129.134.34","x-forwarded-for":"183.129.134.34","connection":"close","content-length":"34","accept-language":"zh-CN,zh;q=0.9","accept-encoding":"gzip, deflate, br","referer":"http://localhost:3000/login","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","origin":"http://localhost:3000","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36","authorization":"null","accept":"application/json, text/plain, */*"} 
+request body info: {"userName":"we","password":"111"} 
+response info: {"code":404,"message":"请求资源未找到","data":null,"error":"Not Found"} 
+error name: NotFoundError 
+
+[2020-05-22T17:33:44.171] [WARN] response - recv 404 request, path: /house/list, method: POST
+[2020-05-22T17:33:44.171] [WARN] response - *************DEBUG**************** 
+time: 5/22/2020, 5:33:44 PM, /house/list operate POST request failed 
+header info: {"host":"www.365tc.cn","x-read-ip":"183.129.134.34","x-forwarded-for":"183.129.134.34","connection":"close","content-length":"35","accept-language":"zh-CN,zh;q=0.9","accept-encoding":"gzip, deflate, br","referer":"http://localhost:3000/login","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","origin":"http://localhost:3000","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36","authorization":"null","accept":"application/json, text/plain, */*"} 
+request body info: {"userName":"dsd","password":"111"} 
+response info: {"code":404,"message":"请求资源未找到","data":null,"error":"Not Found"} 
+error name: NotFoundError 
+
+[2020-05-22T17:35:17.569] [WARN] response - recv 404 request, path: /house/list, method: POST
+[2020-05-22T17:35:17.569] [WARN] response - *************DEBUG**************** 
+time: 5/22/2020, 5:35:17 PM, /house/list operate POST request failed 
+header info: {"host":"www.365tc.cn","x-read-ip":"183.129.134.34","x-forwarded-for":"183.129.134.34","connection":"close","content-length":"36","accept-language":"zh-CN,zh;q=0.9","accept-encoding":"gzip, deflate, br","referer":"http://localhost:3000/login","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","origin":"http://localhost:3000","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36","authorization":"null","accept":"application/json, text/plain, */*"} 
+request body info: {"userName":"dqwe","password":"111"} 
+response info: {"code":404,"message":"请求资源未找到","data":null,"error":"Not Found"} 
+error name: NotFoundError 
+
+[2020-05-22T17:40:14.710] [WARN] response - recv 404 request, path: /house/list, method: POST
+[2020-05-22T17:40:14.710] [WARN] response - *************DEBUG**************** 
+time: 5/22/2020, 5:40:14 PM, /house/list operate POST request failed 
+header info: {"host":"www.365tc.cn","x-read-ip":"183.129.134.34","x-forwarded-for":"183.129.134.34","connection":"close","content-length":"39","accept-language":"zh-CN,zh;q=0.9","accept-encoding":"gzip, deflate, br","referer":"http://localhost:3000/login","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","origin":"http://localhost:3000","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36","authorization":"null","accept":"application/json, text/plain, */*"} 
+request body info: {"userName":"如","password":"1321323"} 
+response info: {"code":404,"message":"请求资源未找到","data":null,"error":"Not Found"} 
+error name: NotFoundError 
+
+[2020-05-22T17:41:02.607] [WARN] response - recv 404 request, path: /house/list, method: POST
+[2020-05-22T17:41:02.607] [WARN] response - *************DEBUG**************** 
+time: 5/22/2020, 5:41:02 PM, /house/list operate POST request failed 
+header info: {"host":"www.365tc.cn","x-read-ip":"183.129.134.34","x-forwarded-for":"183.129.134.34","connection":"close","content-length":"33","accept-language":"zh-CN,zh;q=0.9","accept-encoding":"gzip, deflate, br","referer":"http://localhost:3000/login","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","origin":"http://localhost:3000","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36","authorization":"null","accept":"application/json, text/plain, */*"} 
+request body info: {"userName":"we","password":"11"} 
+response info: {"code":404,"message":"请求资源未找到","data":null,"error":"Not Found"} 
+error name: NotFoundError 
+
+[2020-05-22T22:01:21.506] [WARN] server - Server Listening HTTP On port:6000
+[2020-05-22T22:01:21.507] [WARN] server - {
+  port: 6000,
+  path: '/root/mingou',
+  subpath: 'application',
+  proxy: true,
+  outside: false,
+  debug: true,
+  cors: { origin: '*', maxAge: 3600 },
+  log: { fileName: 'app', isCompress: false, keepDays: 30 },
+  resources: {
+    Mysql: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [QueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager],
+      importCache: [Object],
+      Op: [Object]
+    },
+    Redis: Redis {
+      options: [Object],
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      scriptsSet: {},
+      commandQueue: [Denque],
+      offlineQueue: [Denque],
+      connectionEpoch: 1,
+      connector: [StandaloneConnector],
+      retryAttempts: 0,
+      status: 'ready',
+      condition: [Object],
+      stream: [Socket],
+      serverInfo: [Object],
+      [Symbol(kCapture)]: false
+    }
+  },
+  tasks: [],
+  middlewares: [ { file: 'token', switch: true, TokenName: 'Auth-Token' } ],
+  static: false,
+  i18n: false,
+  maintenance: false,
+  ips: [],
+  unips: [],
+  closes: [],
+  CONTROLLER_PATH: '/root/mingou/controllers/application',
+  TASK_PATH: '/root/mingou/tasks/application',
+  MIDDLEWARE_PATH: '/root/mingou/middlewares/application',
+  ROUTE_PATH: '/root/mingou/routes/application',
+  MESSAGE_PATH: '/root/mingou/messages/application',
+  LOG_PATH: '/root/mingou/logs/application',
+  STATIC_PATH: '/root/mingou/public/application'
+}
+[2020-05-22T22:01:35.606] [WARN] response - recv 404 request, path: /house/list, method: POST
+[2020-05-22T22:01:35.607] [WARN] response - *************DEBUG**************** 
+time: 5/22/2020, 10:01:35 PM, /house/list operate POST request failed 
+header info: {"host":"www.365tc.cn","x-read-ip":"183.129.134.34","x-forwarded-for":"183.129.134.34","connection":"close","content-length":"34","accept-language":"zh-CN,zh;q=0.9","accept-encoding":"gzip, deflate, br","referer":"http://localhost:3000/login","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","origin":"http://localhost:3000","content-type":"application/json;charset=UTF-8","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36","authorization":"null","accept":"application/json, text/plain, */*"} 
+request body info: {"userName":"qwe","password":"12"} 
+response info: {"code":404,"message":"请求资源未找到","data":null,"error":"Not Found"} 
+error name: NotFoundError 
+
+[2020-05-22T22:09:58.560] [WARN] response - recv 404 request, path: /house/list, method: POST
+[2020-05-22T22:09:58.560] [WARN] response - *************DEBUG**************** 
+time: 5/22/2020, 10:09:58 PM, /house/list operate POST request failed 
+header info: {"host":"127.0.0.1","x-read-ip":"127.0.0.1","x-forwarded-for":"127.0.0.1","connection":"close","content-length":"39","accept":"application/json, text/plain, */*","authorization":"null","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36","content-type":"application/json;charset=UTF-8","origin":"https://www.365tc.cn","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"https://www.365tc.cn/login","accept-encoding":"gzip, deflate, br","accept-language":"zh-CN,zh;q=0.9"} 
+request body info: {"userName":"为","password":"1232323"} 
+response info: {"code":404,"message":"请求资源未找到","data":null,"error":"Not Found"} 
+error name: NotFoundError 
+
