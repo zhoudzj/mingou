@@ -32,6 +32,12 @@ module.exports = {
                 'password': ['密码','required','string',]
             },
             controller: ctl.getUserInfo
+        },
+        {
+            description: '退出登录',
+            path: 'logout',
+            method: 'post',
+            controller: ctl.signOut
         }
     ]
 };

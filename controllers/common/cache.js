@@ -36,10 +36,15 @@ module.exports = {
     //获取缓存Token信息
     async getTokenInfo(token) {
         let key = Key_User + token;
-        let value = localCache.get(key);
-        if (value) return value;
+                console.log('============1',new Date());
 
+        let value = localCache.get(key);
+                console.log('============2',new Date());
+
+        if (value) return value;
+        console.log(key);
         value = await Redis.get(key);
+        console.log('============3',new Date());
         if (! value) return null;
         try {
             value = JSON.parse(value);
@@ -59,10 +64,10 @@ module.exports = {
         if (! user || _.isEmpty(user)) throw new SystemError('缓存信息为空');
         if (! token) {
             token = crypto.randomBytes(64).toString('base64');
-            let flag = await this.getTokenInfo(Key_User + token);
+            let flag = await this.getTokenInfo(token);
             while (flag) {
                 token = crypto.randomBytes(64).toString('base64');
-                flag = await this.getTokenInfo(Key_User + token);
+                flag = await this.getTokenInfo(token);
             }
         }
         let cacheInfo = {

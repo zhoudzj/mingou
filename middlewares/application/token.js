@@ -18,11 +18,9 @@ module.exports = (app, config) => {
             else await next();
             return;
         }
-
         let requestToken = ctx.get(config.TokenName);
         let userInfo = await Cache.getTokenInfo(requestToken);
         if (! userInfo) throw new AppError(1302, 'Token超时, 请重新登录');
-        
         ctx.request.identity = userInfo;
         ctx.request.identity.token = requestToken;
         await next();
