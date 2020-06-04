@@ -36,15 +36,11 @@ module.exports = {
     //获取缓存Token信息
     async getTokenInfo(token) {
         let key = Key_User + token;
-                console.log('============1',new Date());
-
         let value = localCache.get(key);
-                console.log('============2',new Date());
-
         if (value) return value;
-        console.log(key);
+        console.log('1',new Date());
         value = await Redis.get(key);
-        console.log('============3',new Date());
+        console.log('2',new Date());
         if (! value) return null;
         try {
             value = JSON.parse(value);
