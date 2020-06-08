@@ -10,7 +10,7 @@ module.exports = {
             validator: {        //参数验证(默认:null. 依赖"ch-validator"模块, 欢迎提供意见,下为举例)
                 'id': ['户型编号', 'required', 'integer', {'min': 100}],
             },
-            controller: ctl.find    //可以使用预先加载的CONTROLLER_PATH中的函数, 当然也可以传入函数。
+            controller: ctl.list    //可以使用预先加载的CONTROLLER_PATH中的函数, 当然也可以传入函数。
         },
     ]
 };

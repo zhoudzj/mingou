@@ -10,8 +10,7 @@ module.exports = (Sequelize, DataTypes) => {
         },
         typeId: {
             type: DataTypes.INTEGER.UNSIGNED,
-            primaryKey: true,
-            autoIncrement: true,
+            allowNull: false,
             comment: '产品类型Id'
         },
         type: {  
@@ -33,18 +32,18 @@ module.exports = (Sequelize, DataTypes) => {
             type: DataTypes.STRING(100),
             allowNull: true,
             comment: '产品价格'
-        }, 
+        },
         img: {
             type: DataTypes.STRING(100), 
             allowNull: true,
             comment: '产品图片'
         }
     }, {
-        tableName: 'type_house',
+        tableName: 'product',
         // indexes: [{
-        //     name: 'house_id_type',
+        //     name: 'product_id_type',
         //     method: 'BTREE',
-        //     fields: ['id', 'type'] 
+        //     fields: ['id', 'typeId'] 
         // }]
     });
     
