@@ -7,8 +7,6 @@ const Cache = require('../../controllers/common/cache');
 const Exception_Routes = [
     '/user/register',
     '/user/login',
-    '/house/list',
-    '/house/create',
 ];
 
 module.exports = (app, config) => {
