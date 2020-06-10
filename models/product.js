@@ -39,14 +39,19 @@ module.exports = (Sequelize, DataTypes) => {
             comment: '产品图片'
         }
     }, {
-        tableName: 'product',
+        tableName: 'products',
         // indexes: [{
         //     name: 'product_id_type',
         //     method: 'BTREE',
         //     fields: ['id', 'typeId'] 
         // }]
     });
-    
+
+     model.association= function(sequelize){
+        console.log(sequelize)
+         this.belongsToMany(sequelize.models.style,{through:sequelize.models.Style_Product,foreignKey:'product_id', otherKey:'style_id'})
+     }
+
     model.sync({
         force:false
     })

@@ -8,7 +8,6 @@ const redis = global.Redis;
 module.exports = {
     //支持的token列表
     async findByTypeId(ctx) {
-        console.log("-----------6.8",ctx.attributes);
         let attributes = ctx.attributes;
         
         ctx.body.data = await styleHouseModel.findAll({

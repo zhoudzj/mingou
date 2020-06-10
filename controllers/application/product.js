@@ -3,6 +3,8 @@ const {AppError} = require('ch-error');
 const Mysql = global.Mysql;
 const Op = Mysql.Op;
 const productModel = Mysql.models.product;
+const styleModel = Mysql.models.style;
+
 const redis = global.Redis;
   
 module.exports = {
@@ -11,11 +13,13 @@ module.exports = {
         console.log(ctx.attributes);
         let attributes = ctx.attributes;
         
-        ctx.body.data = await productModel.findAll({
-            attributes: ['id','type','name','img','typeId'],
+        ctx.body.data = await styleModel.findAll({
+            include:productModel,
+            // attributes: ['id','type','name','img','typeId'],
             where: {
-                typeId: attributes.id,
+                id: attributes.id,
             }
         });
+
     },
 };

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = (Sequelize, DataTypes) => {
-    const model = Sequelize.define('type_house', {
+    const model = Sequelize.define('style', {
         id: {
             type: DataTypes.INTEGER.UNSIGNED,
             primaryKey: true,
@@ -29,7 +29,7 @@ module.exports = (Sequelize, DataTypes) => {
             comment: '户型图片'
         }
     }, {
-        tableName: 'type_house',
+        tableName: 'styles',
         // indexes: [{
         //     name: 'house_id_type',
         //     method: 'BTREE',
@@ -37,6 +37,10 @@ module.exports = (Sequelize, DataTypes) => {
         // }]
     });
     
+    model.association= function(sequelize){
+        this.belongsToMany(sequelize.models.product,{through:sequelize.models.Style_Product,foreignKey:'style_id', otherKey:'product_id'})
+    }
+
     model.sync({
         force:false
     })
