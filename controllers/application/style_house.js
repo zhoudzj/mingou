@@ -2,7 +2,7 @@ const {AppError} = require('ch-error');
 
 const Mysql = global.Mysql;
 const Op = Mysql.Op;
-const styleHouseModel = Mysql.models.type_house;
+const styleHouseModel = Mysql.models.style;
 const redis = global.Redis;
   
 module.exports = {

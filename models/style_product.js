@@ -1,6 +1,4 @@
 'use strict';
-// const styleHouseModal = require('./style_house');
-// const productModal = require('./product');
 
 module.exports = (Sequelize, DataTypes) => {
     const style_product = Sequelize.define('Style_Product', {

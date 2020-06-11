@@ -24,7 +24,7 @@ module.exports = (Sequelize, DataTypes) => {
             comment: '产品名称'
         },
         description: {
-            type: DataTypes.TEXT('medium'),
+            type: DataTypes.STRING(100),
             allowNull: true,
             comment: '产品描述'
         },
@@ -53,7 +53,7 @@ module.exports = (Sequelize, DataTypes) => {
      }
 
     model.sync({
-        force:true
+        force:false
     })
 
     return model;

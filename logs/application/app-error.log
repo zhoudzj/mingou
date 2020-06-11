@@ -469,3 +469,61 @@ notNull Violation: house.type cannot be null
     at Async._drainQueues (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:102:5)
     at Immediate.Async.drainQueues [as _onImmediate] (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:15:14)
     at processImmediate (internal/timers.js:456:21)
+[2020-06-11T10:34:15.233] [ERROR] response - /style/findByTypeId request operate an no-base-error, name: TypeError, message: Cannot read property 'findAll' of undefined
+[2020-06-11T10:34:15.235] [ERROR] response - TypeError: Cannot read property 'findAll' of undefined
+    at findByTypeId (E:\myRepository\mingou\controllers\application\style_house.js:13:47)
+    at dispatch (E:\myRepository\mingou\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\myRepository\mingou\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\myRepository\mingou\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (E:\myRepository\mingou\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\myRepository\mingou\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\myRepository\mingou\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (E:\myRepository\mingou\node_modules\koa-compose\index.js:42:32)
+    at E:\myRepository\mingou\node_modules\ch-validator\index.js:95:16
+    at dispatch (E:\myRepository\mingou\node_modules\koa-compose\index.js:42:32)
+    at E:\myRepository\mingou\node_modules\ch-koa\route.js:15:16
+    at dispatch (E:\myRepository\mingou\node_modules\koa-compose\index.js:42:32)
+    at E:\myRepository\mingou\middlewares\application\token.js:24:15
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async E:\myRepository\mingou\node_modules\ch-koa\format.js:29:13
+    at async bodyParser (E:\myRepository\mingou\node_modules\koa-bodyparser\index.js:95:5)
+[2020-06-11T15:17:00.225] [ERROR] response - /product/list request operate an no-base-error, name: TypeError, message: result.forEach is not a function
+[2020-06-11T15:17:00.226] [ERROR] response - TypeError: result.forEach is not a function
+    at list (E:\myRepository\mingou\controllers\application\product.js:24:16)
+    at async E:\myRepository\mingou\middlewares\application\token.js:24:9
+    at async E:\myRepository\mingou\node_modules\ch-koa\format.js:29:13
+    at async bodyParser (E:\myRepository\mingou\node_modules\koa-bodyparser\index.js:95:5)
+[2020-06-11T18:57:14.224] [ERROR] response - /product/list request operate an no-base-error, name: SequelizeDatabaseError, message: Unknown column 'style.raw' in 'where clause'
+[2020-06-11T18:57:14.225] [ERROR] response - SequelizeDatabaseError: Unknown column 'style.raw' in 'where clause'
+    at Query.formatError (E:\myRepository\mingou\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (E:\myRepository\mingou\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (E:\myRepository\mingou\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\myRepository\mingou\node_modules\mysql2\lib\connection.js:417:32)
+    at PacketParser.onPacket (E:\myRepository\mingou\node_modules\mysql2\lib\connection.js:75:12)
+    at PacketParser.executeStart (E:\myRepository\mingou\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (E:\myRepository\mingou\node_modules\mysql2\lib\connection.js:82:25)
+    at Socket.emit (events.js:311:20)
+    at addChunk (_stream_readable.js:294:12)
+    at readableAddChunk (_stream_readable.js:275:11)
+    at Socket.Readable.push (_stream_readable.js:209:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2020-06-11T19:22:47.422] [ERROR] response - /product/list request operate an no-base-error, name: TypeError, message: Cannot read property 'forEach' of undefined
+[2020-06-11T19:22:47.425] [ERROR] response - TypeError: Cannot read property 'forEach' of undefined
+    at list (E:\myRepository\mingou\controllers\application\product.js:30:29)
+    at async E:\myRepository\mingou\middlewares\application\token.js:24:9
+    at async E:\myRepository\mingou\node_modules\ch-koa\format.js:29:13
+    at async bodyParser (E:\myRepository\mingou\node_modules\koa-bodyparser\index.js:95:5)
+[2020-06-11T19:26:31.707] [ERROR] response - /product/list request operate an no-base-error, name: TypeError, message: Cannot read property 'forEach' of undefined
+[2020-06-11T19:26:31.708] [ERROR] response - TypeError: Cannot read property 'forEach' of undefined
+    at list (E:\myRepository\mingou\controllers\application\product.js:30:29)
+    at async E:\myRepository\mingou\middlewares\application\token.js:24:9
+    at async E:\myRepository\mingou\node_modules\ch-koa\format.js:29:13
+    at async bodyParser (E:\myRepository\mingou\node_modules\koa-bodyparser\index.js:95:5)
+[2020-06-11T19:30:11.574] [ERROR] response - /product/list request operate an no-base-error, name: ReferenceError, message: products is not defined
+[2020-06-11T19:30:11.575] [ERROR] response - ReferenceError: products is not defined
+    at E:\myRepository\mingou\controllers\application\product.js:32:32
+    at Array.map (<anonymous>)
+    at list (E:\myRepository\mingou\controllers\application\product.js:30:30)
+    at async E:\myRepository\mingou\middlewares\application\token.js:24:9
+    at async E:\myRepository\mingou\node_modules\ch-koa\format.js:29:13
+    at async bodyParser (E:\myRepository\mingou\node_modules\koa-bodyparser\index.js:95:5)
