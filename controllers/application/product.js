@@ -21,18 +21,18 @@ module.exports = {
             },
             raw: true
         });
-        console.log(result);
-        const arr = result.map(element => {
+
+        ctx.body.data = result.filter(item=>item['products.default']===0).map(element=>{
             const obj = {}
             Object.keys(element).forEach(key => {
-                const arr = key.split('.');
-                console.log(arr);
-                if (arr.length ===2||arr[arr.length-1]==='number') {
-                    obj[arr[arr.length - 1]] = element[key]
+                const arr = key.split('.');                
+                const property = arr[arr.length-1]
+
+                if (arr.length ===2||property==='number') {
+                    obj[property] = element[key]
                 }
             })
             return obj
         });
-        ctx.body.data = arr;
     }
 };
