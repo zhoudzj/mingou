@@ -469,3 +469,21 @@ notNull Violation: house.type cannot be null
     at Async._drainQueues (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:102:5)
     at Immediate.Async.drainQueues [as _onImmediate] (E:\myRepository\mingou\node_modules\bluebird\js\release\async.js:15:14)
     at processImmediate (internal/timers.js:456:21)
+[2020-06-11T07:47:10.141] [ERROR] response - /style/findByTypeId request operate an no-base-error, name: TypeError, message: Cannot read property 'findAll' of undefined
+[2020-06-11T07:47:10.142] [ERROR] response - TypeError: Cannot read property 'findAll' of undefined
+    at findByTypeId (/Users/Mark/mingou/controllers/application/style_house.js:13:47)
+    at dispatch (/Users/Mark/mingou/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/Mark/mingou/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/Mark/mingou/node_modules/_koa-router@7.4.0@koa-router/lib/router.js:346:16
+    at dispatch (/Users/Mark/mingou/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /Users/Mark/mingou/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/Users/Mark/mingou/node_modules/_koa-router@7.4.0@koa-router/lib/router.js:351:31)
+    at dispatch (/Users/Mark/mingou/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/Mark/mingou/node_modules/_ch-validator@1.2.1@ch-validator/index.js:95:16
+    at dispatch (/Users/Mark/mingou/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/Mark/mingou/node_modules/_ch-koa@1.2.1@ch-koa/route.js:15:16
+    at dispatch (/Users/Mark/mingou/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/Mark/mingou/middlewares/application/token.js:24:15
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /Users/Mark/mingou/node_modules/_ch-koa@1.2.1@ch-koa/format.js:29:13
+    at async bodyParser (/Users/Mark/mingou/node_modules/_koa-bodyparser@4.3.0@koa-bodyparser/index.js:95:5)
