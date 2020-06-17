@@ -5,7 +5,6 @@ module.exports = (Sequelize, DataTypes) => {
         id: {
             type: DataTypes.INTEGER.UNSIGNED,
             primaryKey: true,
-            autoIncrement: true,
             comment: '产品编号'
         },
         typeId: {
@@ -17,6 +16,16 @@ module.exports = (Sequelize, DataTypes) => {
             type: DataTypes.STRING(50),
             allowNull: true,
             comment: '产品类型'
+        },
+        groupId: {
+            type: DataTypes.INTEGER.UNSIGNED,
+            allowNull: true,
+            comment: '组ID'
+        },
+        childId: {
+            type: DataTypes.INTEGER.UNSIGNED,
+            allowNull: true,
+            comment: '子ID'
         },
         name: {
             type: DataTypes.STRING(50),
@@ -53,17 +62,11 @@ module.exports = (Sequelize, DataTypes) => {
             allowNull: true,
             comment: '产品图片'
         },
-        choosable: {
-            type: DataTypes.BOOLEAN, 
-            allowNull: true,
-            comment: '可选择'
-        },
         default: {
             type: DataTypes.BOOLEAN, 
             allowNull: true,
             comment: '是否默认配置'
         },
-
     }, {
         tableName: 'products',
         // indexes: [{
