@@ -548,3 +548,17 @@ notNull Violation: house.type cannot be null
     at async E:\myRepository\mingou\node_modules\ch-koa\format.js:29:13
     at async bodyParser (E:\myRepository\mingou\node_modules\koa-bodyparser\index.js:95:5)
 >>>>>>> fb0ac934e22fd178eb8b602c1099e6e05abe3d68
+[2020-06-17T21:53:49.540] [ERROR] response - /product/list request operate an no-base-error, name: SequelizeDatabaseError, message: Unknown column 'products.choosable' in 'field list'
+[2020-06-17T21:53:49.543] [ERROR] response - SequelizeDatabaseError: Unknown column 'products.choosable' in 'field list'
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:417:32)
+    at PacketParser.onPacket (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at Socket.Readable.push (_stream_readable.js:214:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
