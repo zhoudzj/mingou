@@ -562,3 +562,43 @@ notNull Violation: house.type cannot be null
     at readableAddChunk (_stream_readable.js:273:9)
     at Socket.Readable.push (_stream_readable.js:214:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+[2020-06-19T06:59:49.589] [ERROR] response - /product/list request operate an no-base-error, name: SequelizeDatabaseError, message: read ETIMEDOUT
+[2020-06-19T06:59:49.590] [ERROR] response - SequelizeDatabaseError: read ETIMEDOUT
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Connection._notifyError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:197:21)
+    at Connection._handleFatalError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:156:10)
+    at Connection._handleNetworkError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:169:10)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[2020-06-19T07:00:12.687] [ERROR] response - /product/list request operate an no-base-error, name: SequelizeDatabaseError, message: read ETIMEDOUT
+[2020-06-19T07:00:12.687] [ERROR] response - SequelizeDatabaseError: read ETIMEDOUT
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Connection._notifyError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:197:21)
+    at Connection._handleFatalError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:156:10)
+    at Connection._handleNetworkError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:169:10)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[2020-06-19T07:00:37.195] [ERROR] response - /product/list request operate an no-base-error, name: SequelizeDatabaseError, message: read ETIMEDOUT
+[2020-06-19T07:00:37.196] [ERROR] response - SequelizeDatabaseError: read ETIMEDOUT
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Connection._notifyError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:197:21)
+    at Connection._handleFatalError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:156:10)
+    at Connection._handleNetworkError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:169:10)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[2020-06-19T08:04:47.392] [ERROR] response - /product/list request operate an no-base-error, name: SequelizeDatabaseError, message: read ETIMEDOUT
+[2020-06-19T08:04:47.392] [ERROR] response - SequelizeDatabaseError: read ETIMEDOUT
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Connection._notifyError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:197:21)
+    at Connection._handleFatalError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:156:10)
+    at Connection._handleNetworkError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:169:10)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
