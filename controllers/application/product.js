@@ -33,5 +33,14 @@ module.exports = {
             })
             return obj
         });
+    },
+    async findByTypeId(ctx) {
+       let attributes = ctx.attributes;
+       const result = await productModel.findAll({
+           where: {
+               typeId:attributes.typeId
+           }
+       })
+       ctx.body.data = result;
     }
 };
