@@ -22,7 +22,7 @@ let defaultConfig = {
     Redis: {
         host: '39.100.127.116',
         port: 6379,
-        // password: '',
+        password: 'MarkZhou62759468',
         db: 0
     },
     //应用配置

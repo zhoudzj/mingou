@@ -14,7 +14,6 @@ const localCache = new NC();
 const Redis = global.Redis;
 const TOKEN_TIME = process.env.TOKEN_TIME || 86400 * 3;
 const LOCAL_TOKEN_TIME = 3600; //本地缓存token时间
-const LOCAL_RATE_TIME = 5; //本地缓存汇率时间
 const VERIFY_TIME = 3; //验证码校验最大次数
 const Key_User = 'user_';
 const NODE_ENV = process.env.NODE_ENV || 'production';

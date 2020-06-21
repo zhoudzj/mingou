@@ -602,3 +602,73 @@ notNull Violation: house.type cannot be null
     at Socket.emit (events.js:315:20)
     at emitErrorNT (internal/streams/destroy.js:84:8)
     at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[2020-06-21T11:21:45.867] [ERROR] response - /product/findByTypeId request operate an no-base-error, name: Error, message: WHERE parameter "type_id" has invalid "undefined" value
+[2020-06-21T11:21:45.867] [ERROR] response - Error: WHERE parameter "type_id" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-06-21T11:27:25.134] [ERROR] response - /product/findByTypeId request operate an no-base-error, name: Error, message: WHERE parameter "type_id" has invalid "undefined" value
+[2020-06-21T11:27:25.135] [ERROR] response - Error: WHERE parameter "type_id" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2184:13)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2173:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/abstract/query-generator.js:1315:28)
+    at QueryInterface.select (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/query-interface.js:1122:27)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1757:34
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
+[2020-06-21T15:21:03.171] [ERROR] response - /product/findByTypeId request operate an no-base-error, name: SequelizeDatabaseError, message: read ETIMEDOUT
+[2020-06-21T15:21:03.172] [ERROR] response - SequelizeDatabaseError: read ETIMEDOUT
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Connection._notifyError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:197:21)
+    at Connection._handleFatalError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:156:10)
+    at Connection._handleNetworkError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:169:10)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[2020-06-21T15:21:05.211] [ERROR] response - /product/findByTypeId request operate an no-base-error, name: SequelizeDatabaseError, message: read ETIMEDOUT
+[2020-06-21T15:21:05.212] [ERROR] response - SequelizeDatabaseError: read ETIMEDOUT
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Connection._notifyError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:197:21)
+    at Connection._handleFatalError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:156:10)
+    at Connection._handleNetworkError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:169:10)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[2020-06-21T15:21:05.709] [ERROR] response - /product/findByTypeId request operate an no-base-error, name: SequelizeDatabaseError, message: read ETIMEDOUT
+[2020-06-21T15:21:05.709] [ERROR] response - SequelizeDatabaseError: read ETIMEDOUT
+    at Query.formatError (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/dialects/mysql/query.js:51:23)
+    at Connection._notifyError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:197:21)
+    at Connection._handleFatalError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:156:10)
+    at Connection._handleNetworkError (/Users/Mark/mingou/node_modules/_mysql2@2.1.0@mysql2/lib/connection.js:169:10)
+    at Socket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
