@@ -79,8 +79,12 @@ module.exports = (Sequelize, DataTypes) => {
     //管理员
     model.TYPE_ADMIN = 2;
 
+    model.association= function(sequelize){
+         this.hasMany(sequelize.models.order,);
+     }
+
     model.sync({
-        force:false
+        force:true
     })
 
     return model;

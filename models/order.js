@@ -7,10 +7,30 @@ module.exports = (Sequelize, DataTypes) => {
             primaryKey: true,
             comment: '订单编号'
         },
+        project_name: {
+            type: DataTypes.STRING(50),
+            allowNull: true,
+            comment: '项目名称'
+        },
         style_name: {
             type: DataTypes.STRING(50),
             allowNull: true,
             comment: '户型名称'
+        },
+        house_num: {
+            type: DataTypes.STRING(50),
+            allowNull: true,
+            comment: '户型名称'
+        },
+        master_name: {
+            type: DataTypes.STRING(50),
+            allowNull: true,
+            comment: '姓名'
+        },
+        sales_name: {
+            type: DataTypes.STRING(50),
+            allowNull: true,
+            comment: '销售名字'
         },
         create_time: {
             type: DataTypes.INTEGER.UNSIGNED,
@@ -27,7 +47,8 @@ module.exports = (Sequelize, DataTypes) => {
     });
 
      model.association= function(sequelize){
-         this.belongsToMany(sequelize.models.product,{through:sequelize.models.Order_Product});
+        this.belongsTo(sequelize.models.user);
+        this.belongsToMany(sequelize.models.product,{through:sequelize.models.Order_Product});
      }
 
     model.sync({
