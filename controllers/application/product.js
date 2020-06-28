@@ -4,6 +4,7 @@ const Mysql = global.Mysql;
 const Op = Mysql.Op;
 const productModel = Mysql.models.product;
 const styleModel = Mysql.models.style;
+const styleProductModal = Mysql.models.Style_Product;
 
 const redis = global.Redis;
 

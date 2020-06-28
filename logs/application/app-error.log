@@ -672,3 +672,33 @@ notNull Violation: house.type cannot be null
     at Socket.emit (events.js:315:20)
     at emitErrorNT (internal/streams/destroy.js:84:8)
     at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[2020-06-26T17:27:03.215] [ERROR] response - /product/list request operate an no-base-error, name: MaxRetriesPerRequestError, message: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+[2020-06-26T17:27:03.217] [ERROR] response - MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (/Users/Mark/mingou/node_modules/_ioredis@4.17.1@ioredis/built/redis/event_handler.js:172:37)
+    at Object.onceWrapper (events.js:422:26)
+    at Socket.emit (events.js:315:20)
+    at TCP.<anonymous> (net.js:674:12)
+[2020-06-26T17:35:27.553] [ERROR] response - /style/findByTypeId request operate an no-base-error, name: MaxRetriesPerRequestError, message: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+[2020-06-26T17:35:27.553] [ERROR] response - MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (/Users/Mark/mingou/node_modules/_ioredis@4.17.1@ioredis/built/redis/event_handler.js:172:37)
+    at Object.onceWrapper (events.js:422:26)
+    at Socket.emit (events.js:315:20)
+    at TCP.<anonymous> (net.js:674:12)
+[2020-06-26T21:29:11.703] [ERROR] response - /product/findByTypeId request operate an no-base-error, name: SequelizeEagerLoadingError, message: Style_Product is not associated to product!
+[2020-06-26T21:29:11.704] [ERROR] response - SequelizeEagerLoadingError: Style_Product is not associated to product!
+    at Function._getIncludedAssociation (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:715:13)
+    at Function._validateIncludedElement (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:619:53)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:516:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (/Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:511:39)
+    at /Users/Mark/mingou/node_modules/_sequelize@5.21.10@sequelize/lib/model.js:1726:14
+    at tryCatcher (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:93:12)
+    at _drainQueue (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Mark/mingou/node_modules/_bluebird@3.7.2@bluebird/js/release/async.js:15:14)
+    at processImmediate (internal/timers.js:456:21)
