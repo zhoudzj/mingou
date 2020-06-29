@@ -20,7 +20,7 @@ module.exports = (Sequelize, DataTypes) => {
         house_num: {
             type: DataTypes.STRING(50),
             allowNull: true,
-            comment: '户型名称'
+            comment: '房号'
         },
         master_name: {
             type: DataTypes.STRING(50),
@@ -48,7 +48,7 @@ module.exports = (Sequelize, DataTypes) => {
 
      model.association= function(sequelize){
         this.belongsTo(sequelize.models.user);
-        this.belongsToMany(sequelize.models.product,{through:sequelize.models.Order_Product});
+        // this.belongsToMany(sequelize.models.product,{through:sequelize.models.Order_Product});
      }
 
     model.sync({

@@ -14,7 +14,7 @@ module.exports = (Sequelize, DataTypes) => {
             field: 'style_id', 
             primaryKey: true, 
             allowNull: false, 
-            comment: '产品id'
+            comment: '户型id'
         },
         // id: {
         //     type: DataTypes.INTEGER.UNSIGNED,

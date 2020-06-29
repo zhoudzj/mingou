@@ -7,11 +7,11 @@ const redis = global.Redis;
   
 module.exports = {
     //支持的token列表
-    async findByTypeId(ctx) {
+    async create(ctx) {
         let attributes = ctx.attributes;
         
         ctx.body.data = await styleOrderModel.create({
-                        
+
         });
     },
 };

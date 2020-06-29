@@ -30,7 +30,7 @@ module.exports = (Sequelize, DataTypes) => {
         area: {
             type: DataTypes.STRING(15),
             allowNull: true,
-            comment: '用户手机号区号' 
+            comment: '用户手机号区号'
         },
         email: {
             type: DataTypes.STRING(100),
@@ -62,30 +62,34 @@ module.exports = (Sequelize, DataTypes) => {
     }, {
         tableName: 'user',
         initialAutoIncrement: 1000,
-        indexes: [{
-            name: 'mobile_area',
-            method: 'BTREE',
-            unique: true,
-            fields: ['mobile', 'area']
-        }, {
-            name: 'email',
-            method: 'BTREE',
-            fields: ['email']
-        }]
+        indexes: [
+            {
+                name: 'mobile_area',
+                method: 'BTREE',
+                unique: true,
+                fields: ['mobile', 'area']
+            }, {
+                name: 'email',
+                method: 'BTREE',
+                fields: ['email']
+            }
+        ]
     });
-    
+
     //普通用户
     model.TYPE_NORMAL = 1;
     //管理员
     model.TYPE_ADMIN = 2;
 
-    model.association= function(sequelize){
-         this.hasMany(sequelize.models.order,);
-     }
+    model.association = function (sequelize) {
+        this.hasMany(sequelize.models.order, {
+            foreignKey: {
+                name: 'userId'
+            }
+        });
+    }
 
-    model.sync({
-        force:true
-    })
+    model.sync({force: true})
 
     return model;
 };
