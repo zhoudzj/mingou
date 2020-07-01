@@ -11,7 +11,7 @@ const redis = global.Redis;
 module.exports = {
     //支持的token列表
     async list(ctx) {
-        console.log(ctx.attributes);
+        console.log('-------',ctx.attributes);
         let attributes = ctx.attributes;
 
         const result = await styleModel.findAll({
@@ -36,10 +36,13 @@ module.exports = {
         });
     },
     async findByTypeId(ctx) {
-       let attributes = ctx.attributes;
+       let attributes = ctx.request.body;
+       if(!Array.isArray(attributes.typeIds)){
+            throw new AppError(11010, '参数错误');
+       }
        const result = await productModel.findAll({
            where: {
-               typeId:attributes.typeId
+               typeId:attributes.typeIds
            }
        })
        ctx.body.data = result;
