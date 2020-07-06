@@ -57,13 +57,12 @@ module.exports = (Sequelize, DataTypes) => {
         this.belongsTo(sequelize.models.user,{
             foreignKey:'user_id',
             targetKey:'id',
-            // constraints: false
         });
         // this.belongsToMany(sequelize.models.product,{through:sequelize.models.Order_Product});
      }
 
     model.sync({
-        force:true,
+        force:false,
         logging: console.log
     })
 

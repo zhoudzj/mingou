@@ -4,7 +4,8 @@ const fs = require('fs');
 const _ = require('lodash');
 const path = require('path');
 const Project_PATH = path.join(__dirname, '..');
-
+const AliHost = '39.100.127.116';
+const Localhost = '127.0.0.1';
 /**
  * 公共配置文件
  */
@@ -14,13 +15,13 @@ let defaultConfig = {
         database: 'mingou',
         username: 'root',
         password: 'mark6275',
-        host: '127.0.0.1',
+        host: Localhost,
         port: 3306,
         modelPath: path.join(Project_PATH, 'models') //表结构路径(不需要改)
     },
     //Redis配置
     Redis: {
-        host: '127.0.0.1',
+        host: Localhost,
         port: 6379,
         password: 'MarkZhou62759468',
         db: 0

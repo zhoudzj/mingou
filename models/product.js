@@ -96,7 +96,7 @@ module.exports = (Sequelize, DataTypes) => {
     model.COLOR_WHITE = 4;
 
     model.sync({
-        force:true
+        force:false
     })
 
     return model;
