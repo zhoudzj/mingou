@@ -43,7 +43,7 @@ module.exports = (Sequelize, DataTypes) => {
             comment: '型号/规格'
         },
         description: {
-            type: DataTypes.STRING(100),
+            type: DataTypes.STRING(200),
             allowNull: true,
             comment: '产品描述'
         },
@@ -67,6 +67,11 @@ module.exports = (Sequelize, DataTypes) => {
             allowNull: true,
             comment: '是否默认配置'
         },
+        color: {
+            type: DataTypes.TINYINT.UNSIGNED,
+            allowNull: true,
+            comment: '颜色'
+        }
     }, {
         tableName: 'products',
         // indexes: [{
@@ -77,13 +82,21 @@ module.exports = (Sequelize, DataTypes) => {
     });
 
      model.association= function(sequelize){
-        console.log(sequelize)
          this.belongsToMany(sequelize.models.style,{through:sequelize.models.Style_Product,foreignKey:'product_id', otherKey:'style_id'});
          this.belongsToMany(sequelize.models.order,{through:sequelize.models.Order_Product})
      }
 
+    //香槟金
+    model.COLOR_GOLDEN = 1;
+    //雪花银
+    model.COLOR_SEAL = 2;
+    //云母黑
+    model.COLOR_BLACK = 3;
+    //暖白
+    model.COLOR_WHITE = 4;
+
     model.sync({
-        force:false
+        force:true
     })
 
     return model;

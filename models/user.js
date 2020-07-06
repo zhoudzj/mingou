@@ -62,18 +62,6 @@ module.exports = (Sequelize, DataTypes) => {
     }, {
         tableName: 'user',
         initialAutoIncrement: 1000,
-        indexes: [
-            {
-                name: 'mobile_area',
-                method: 'BTREE',
-                unique: true,
-                fields: ['mobile', 'area']
-            }, {
-                name: 'email',
-                method: 'BTREE',
-                fields: ['email']
-            }
-        ]
     });
 
     //普通用户
@@ -83,13 +71,15 @@ module.exports = (Sequelize, DataTypes) => {
 
     model.association = function (sequelize) {
         this.hasMany(sequelize.models.order, {
-            foreignKey: {
-                name: 'userId'
-            }
+            // foreignKey: {
+            //     name: 'user_id'
+            // },
+            // targetKey:'user_id',
+            // constraints: false
         });
     }
 
-    model.sync({force: true})
+    model.sync({force: false})
 
     return model;
 };

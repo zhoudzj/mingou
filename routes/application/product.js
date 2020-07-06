@@ -21,5 +21,14 @@ module.exports = {
             },
             controller: ctl.findByTypeId    //可以使用预先加载的CONTROLLER_PATH中的函数, 当然也可以传入函数。
         },
+        {
+            description: '获取户型默认产品',
+            path:'defaultList',
+            method: 'post',
+            validator: {
+                'id': ['户型编号', 'required', 'integer', {'min': 100}],
+            },
+            controller: ctl.defaultList    //可以使用预先加载的CONTROLLER_PATH中的函数, 当然也可以传入函数。
+        }
     ]
 };

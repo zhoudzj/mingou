@@ -5,6 +5,7 @@ module.exports = (Sequelize, DataTypes) => {
         id: {
             type: DataTypes.INTEGER.UNSIGNED,
             primaryKey: true,
+            autoIncrement: true,
             comment: '订单编号'
         },
         project_name: {
@@ -33,12 +34,18 @@ module.exports = (Sequelize, DataTypes) => {
             comment: '销售名字'
         },
         create_time: {
-            type: DataTypes.INTEGER.UNSIGNED,
+            type: DataTypes.DATE,
             allowNull: false,
             comment: '订单创建时间'
+        },
+        user_id: {
+            type: DataTypes.INTEGER.UNSIGNED,
+            allowNull: true,
+            comment: '用户Id'
         }
     }, {
-        tableName: 'orders',
+        tableName: 'order',
+        initialAutoIncrement: 1000,
         // indexes: [{
         //     name: 'product_id_type',
         //     method: 'BTREE',
@@ -47,12 +54,17 @@ module.exports = (Sequelize, DataTypes) => {
     });
 
      model.association= function(sequelize){
-        this.belongsTo(sequelize.models.user);
+        this.belongsTo(sequelize.models.user,{
+            foreignKey:'user_id',
+            targetKey:'id',
+            // constraints: false
+        });
         // this.belongsToMany(sequelize.models.product,{through:sequelize.models.Order_Product});
      }
 
     model.sync({
-        force:true
+        force:true,
+        logging: console.log
     })
 
     return model;
