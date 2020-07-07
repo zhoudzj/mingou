@@ -15,13 +15,13 @@ let defaultConfig = {
         database: 'mingou',
         username: 'root',
         password: 'mark6275',
-        host: Localhost,
+        host: AliHost,
         port: 3306,
         modelPath: path.join(Project_PATH, 'models') //表结构路径(不需要改)
     },
     //Redis配置
     Redis: {
-        host: Localhost,
+        host: AliHost,
         port: 6379,
         password: 'MarkZhou62759468',
         db: 0

@@ -22,7 +22,6 @@ module.exports = {
             },
             raw: true
         });
-        console.log(result);
         ctx.body.data = result.filter(item=>item['products.default']===0).map(element=>{
             const obj = {}
             Object.keys(element).forEach(key => {
