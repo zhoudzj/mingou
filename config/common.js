@@ -4,8 +4,8 @@ const fs = require('fs');
 const _ = require('lodash');
 const path = require('path');
 const Project_PATH = path.join(__dirname, '..');
-const AliHost = '39.100.127.116';
-const Localhost = '127.0.0.1';
+const AliHost = '127.0.0.1';
+
 /**
  * 公共配置文件
  */

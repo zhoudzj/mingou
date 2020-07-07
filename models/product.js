@@ -83,7 +83,7 @@ module.exports = (Sequelize, DataTypes) => {
 
      model.association= function(sequelize){
          this.belongsToMany(sequelize.models.style,{through:sequelize.models.Style_Product,foreignKey:'product_id', otherKey:'style_id'});
-         this.belongsToMany(sequelize.models.order,{through:sequelize.models.Order_Product})
+         this.belongsToMany(sequelize.models.order,{through:sequelize.models.Order_Product,foreignKey:'product_id', otherKey:'order_id'})
      }
 
     //香槟金

@@ -58,11 +58,11 @@ module.exports = (Sequelize, DataTypes) => {
             foreignKey:'user_id',
             targetKey:'id',
         });
-        // this.belongsToMany(sequelize.models.product,{through:sequelize.models.Order_Product});
+        this.belongsToMany(sequelize.models.product,{through:sequelize.models.Order_Product,foreignKey:'order_id', otherKey:'product_id'});
      }
 
     model.sync({
-        force:false,
+        force:true,
         logging: console.log
     })
 
