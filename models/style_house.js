@@ -1,4 +1,7 @@
 'use strict';
+/**
+ * 户型表
+ */
 
 module.exports = (Sequelize, DataTypes) => {
     const model = Sequelize.define('style', {

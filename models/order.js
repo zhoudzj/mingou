@@ -62,7 +62,7 @@ module.exports = (Sequelize, DataTypes) => {
      }
 
     model.sync({
-        force:true,
+        force:false,
         logging: console.log
     })
 

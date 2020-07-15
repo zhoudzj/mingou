@@ -1,4 +1,7 @@
 'use strict';
+/**
+ * 产品表
+ */
 
 module.exports = (Sequelize, DataTypes) => {
     const model = Sequelize.define('product', {
@@ -86,15 +89,13 @@ module.exports = (Sequelize, DataTypes) => {
          this.belongsToMany(sequelize.models.order,{through:sequelize.models.Order_Product,foreignKey:'product_id', otherKey:'order_id'})
      }
 
-    //香槟金
-    model.COLOR_GOLDEN = 1;
-    //雪花银
-    model.COLOR_SEAL = 2;
-    //云母黑
+    //灰/雪花银
+    model.COLOR_GRAY = 1;
+    //金/香槟金
+    model.COLOR_GOLDEN = 2;
+    //黑/云母黑
     model.COLOR_BLACK = 3;
-    //暖白
-    model.COLOR_WHITE = 4;
-
+    
     model.sync({
         force:false
     })

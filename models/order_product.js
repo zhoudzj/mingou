@@ -26,7 +26,7 @@ module.exports = (Sequelize, DataTypes) => {
     })
 
     order_product.sync({
-        force: true
+        force: false
     })
 
     return order_product;
