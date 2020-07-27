@@ -10,7 +10,7 @@ module.exports = {
     //支持的token列表
     async findType(ctx) {
         let attributes = ctx.attributes;
-        if(!Array.isArray(attributes.roomData)){
+        if(!Array.isArray(attributes.roomData)||attributes.roomData.length===0){
             throw new AppError(11010, '参数错误');
        }
        const newArr = attributes.roomData.map(item=>{

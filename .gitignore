@@ -4,3 +4,4 @@ node_modules
 .vscode
 logs
 config/common-local.js
+path
