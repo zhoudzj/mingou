@@ -70,13 +70,7 @@ module.exports = (Sequelize, DataTypes) => {
     model.TYPE_ADMIN = 2;
 
     model.association = function (sequelize) {
-        this.hasMany(sequelize.models.order, {
-            // foreignKey: {
-            //     name: 'user_id'
-            // },
-            // targetKey:'user_id',
-            // constraints: false
-        });
+        this.hasMany(sequelize.models.order);
     }
 
     model.sync({force: false})

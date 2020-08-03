@@ -2,6 +2,12 @@
 
 module.exports = (Sequelize, DataTypes) => {
     const order_product = Sequelize.define('Order_Product', {
+        // id: {
+        //     type: DataTypes.INTEGER,
+        //     primaryKey: true,
+        //     autoIncrement: true,
+        //     allowNull: false
+        // },
         productId: {
             type: DataTypes.INTEGER.UNSIGNED, 
             field: 'product_id', 
@@ -25,8 +31,13 @@ module.exports = (Sequelize, DataTypes) => {
         tableName: 'orderProductMapping',
     })
 
+    order_product.association= function(sequelize){
+        this.belongsTo(sequelize.models.order);
+        this.belongsTo(sequelize.models.product);
+     }
+
     order_product.sync({
-        force: false
+        force: false,
     })
 
     return order_product;

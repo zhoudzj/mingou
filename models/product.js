@@ -76,7 +76,7 @@ module.exports = (Sequelize, DataTypes) => {
             comment: '颜色'
         }
     }, {
-        tableName: 'products',
+        tableName: 'product',
         // indexes: [{
         //     name: 'product_id_type',
         //     method: 'BTREE',
@@ -86,7 +86,10 @@ module.exports = (Sequelize, DataTypes) => {
 
      model.association= function(sequelize){
          this.belongsToMany(sequelize.models.style,{through:sequelize.models.Style_Product,foreignKey:'product_id', otherKey:'style_id'});
-         this.belongsToMany(sequelize.models.order,{through:sequelize.models.Order_Product,foreignKey:'product_id', otherKey:'order_id'})
+
+         this.belongsToMany(sequelize.models.order,{through:sequelize.models.Order_Product});
+         this.hasMany(sequelize.models.Order_Product);
+        // this.belongsToMany(sequelize.models.order,{through:sequelize.models.Order_Product,foreignKey:'product_id', otherKey:'order_id'})
      }
 
     //灰/雪花银

@@ -10,9 +10,29 @@ module.exports = {
             validator: {        //参数验证(默认:null. 依赖"ch-validator"模块, 欢迎提供意见,下为举例)
                 'list': ['订单列表', 'required', 'array'],
                 'salesman': ['销售名称','required','string'],
-                'room': ['户号','required','string']
+                'room': ['户号','required','string'],
+                'comunityName': ['社区名','required','string'],
+                'name': ['姓名','required','string'],
+                'style': ['户型','required','string']
             },
             controller: ctl.create    //可以使用预先加载的CONTROLLER_PATH中的函数, 当然也可以传入函数。
         },
+        {
+            description: '订单查询',    //订单查询
+            path: 'list',
+            method: 'get',
+            validator: {
+            },
+            controller: ctl.find
+        },
+        {
+            description: '订单详情',    //订单查询
+            path: 'detail',
+            method: 'post',
+            validator: {
+                'orderId': ['订单号','required','string']
+            },
+            controller: ctl.detail
+        }
     ]
 };

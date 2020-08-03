@@ -2,12 +2,12 @@
 
 module.exports = (Sequelize, DataTypes) => {
     const model = Sequelize.define('order', {
-        id: {
-            type: DataTypes.INTEGER.UNSIGNED,
-            primaryKey: true,
-            autoIncrement: true,
-            comment: '订单编号'
-        },
+        // id: {
+        //     type: DataTypes.INTEGER.UNSIGNED,
+        //     primaryKey: true,
+        //     autoIncrement: true,
+        //     comment: '订单编号'
+        // },
         project_name: {
             type: DataTypes.STRING(50),
             allowNull: true,
@@ -58,12 +58,12 @@ module.exports = (Sequelize, DataTypes) => {
             foreignKey:'user_id',
             targetKey:'id',
         });
-        this.belongsToMany(sequelize.models.product,{through:sequelize.models.Order_Product,foreignKey:'order_id', otherKey:'product_id'});
+        this.belongsToMany(sequelize.models.product,{through:sequelize.models.Order_Product});
+        this.hasMany(sequelize.models.Order_Product);
      }
 
     model.sync({
         force:false,
-        logging: console.log
     })
 
     return model;
