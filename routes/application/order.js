@@ -33,6 +33,15 @@ module.exports = {
                 'orderId': ['订单号','required','string']
             },
             controller: ctl.detail
+        },
+        {
+            description: '删除订单',
+            path: 'remove',
+            method: 'post',
+            validator: {
+                'orderId': ['订单号','required','string']
+            },
+            controller: ctl.remove
         }
     ]
 };

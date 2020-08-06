@@ -81,5 +81,18 @@ module.exports = {
         } catch (e) {
 
         }
+    },
+    async remove(ctx) {
+        let attributes = ctx.attributes;
+        try {
+            const result = await orderModel.destroy({
+                include: OrderProduct,
+                where: {
+                id: attributes.orderId,
+                },
+            })
+        } catch (e) {
+            console.log(e)
+        }
     }
 };
