@@ -1,4 +1,5 @@
 const {AppError,SystemError} = require('ch-error');
+const puppeteer = require('puppeteer');
 
 const Mysql = global.Mysql;
 const Op = Mysql.Op;
@@ -94,5 +95,16 @@ module.exports = {
         } catch (e) {
             console.log(e)
         }
+    },
+    async createPdf(ctx) {
+        let attributes = ctx.attributes;
+        console.log('=====',attributes);
+        (async () => {
+            const browser = await puppeteer.launch();
+            const page = await browser.newPage();
+            await page.goto(attributes.url,{waitUntil: 'networkidle2'});
+            await page.pdf({path:'hh.pdf',format:'A4'});
+            await browser.close();
+        })();
     }
 };

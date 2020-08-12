@@ -42,6 +42,15 @@ module.exports = {
                 'orderId': ['订单号','required','string']
             },
             controller: ctl.remove
+        },
+        {
+            description: '生成pdf',
+            path: 'createPdf',
+            method: 'post',
+            validator: {
+                'url': ['pdf','required','string']
+            },
+            controller: ctl.createPdf
         }
     ]
 };
