@@ -46,7 +46,7 @@ module.exports = {
         {
             description: '生成pdf',
             path: 'createPdf',
-            method: 'post',
+            method: 'get',
             validator: {
                 'url': ['pdf','required','string']
             },
