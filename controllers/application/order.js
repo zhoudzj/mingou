@@ -32,6 +32,7 @@ module.exports = {
                     obj.productId = item.id;
                     obj.orderId = result.id;
                     obj.number = item.number;
+                    obj.itemColor = item.color;
                     return obj
                 });
             console.log(newList);
@@ -66,13 +67,12 @@ module.exports = {
                 },
                 raw: true
             });
-
+            console.log(result);
             ctx.body.data = result.map(item => {
                 const obj = {};
                 Object
                     .keys(item)
                     .forEach(key => {
-                        console.log(key);
                         const arr = key.split('.');
                         const property = arr[arr.length - 1]
                         console.log(property);
@@ -89,7 +89,7 @@ module.exports = {
                             'price',
                             'unit',
                             'default',
-                            'color'
+                            'itemColor'
                         ].includes(property)) {
                             obj[property] = item[key]
                         }
@@ -119,6 +119,8 @@ module.exports = {
         const pdf = await (async() => {
             const browser = await puppeteer.launch();
             const page = await browser.newPage();
+            await page.setCacheEnabled(false)
+
             await page.goto('http://localhost:3000');
             await page.waitFor(5000);
 

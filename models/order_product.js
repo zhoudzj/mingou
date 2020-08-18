@@ -15,7 +15,7 @@ module.exports = (Sequelize, DataTypes) => {
             allowNull: false, 
             comment: '产品id'
         },
-        orderId:{
+        orderId: {
             type: DataTypes.INTEGER.UNSIGNED, 
             field: 'order_id', 
             primaryKey: true, 
@@ -26,6 +26,11 @@ module.exports = (Sequelize, DataTypes) => {
             type: DataTypes.INTEGER.UNSIGNED,
             allowNull: true,
             comment: '产品数量'
+        },
+        itemColor: {
+            type: DataTypes.TINYINT.UNSIGNED,
+            allowNull: true,
+            comment: '颜色'
         }
     }, {
         tableName: 'orderProductMapping',
