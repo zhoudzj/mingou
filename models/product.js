@@ -89,7 +89,6 @@ module.exports = (Sequelize, DataTypes) => {
 
          this.belongsToMany(sequelize.models.order,{through:sequelize.models.Order_Product});
          this.hasMany(sequelize.models.Order_Product);
-        // this.belongsToMany(sequelize.models.order,{through:sequelize.models.Order_Product,foreignKey:'product_id', otherKey:'order_id'})
      }
 
     //灰/雪花银

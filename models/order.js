@@ -1,5 +1,5 @@
 'use strict';
-
+const moment = require('moment');
 module.exports = (Sequelize, DataTypes) => {
     const model = Sequelize.define('order', {
         // id: {
@@ -36,6 +36,9 @@ module.exports = (Sequelize, DataTypes) => {
         create_time: {
             type: DataTypes.DATE,
             allowNull: false,
+            get() {
+                return moment(this.getDataValue('createdAt')).format('YYYY-MM-DD HH:mm:ss');
+            },
             comment: '订单创建时间'
         },
         user_id: {

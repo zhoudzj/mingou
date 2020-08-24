@@ -50,6 +50,7 @@ module.exports = {
         const useInfo = ctx.request.identity;
         try {
             ctx.body.data = await orderModel.findAll({
+                order:[['create_time','DESC']],
                 where: {
                     user_id: useInfo.id
                 },
@@ -122,7 +123,11 @@ module.exports = {
             await page.setCacheEnabled(false)
 
             await page.goto('http://localhost:3000');
-            await page.waitFor(5000);
+            const loginInput = await page.$('.ant-input');
+            console.log(loginInput);
+            await page.focus('.ant-input');
+            await page.waitFor(500);
+            await page.type('.ant-input', 'zhoudi', {delay: 100})
 
             const pdf = await page.pdf({format: 'A4'});
             await browser.close();
