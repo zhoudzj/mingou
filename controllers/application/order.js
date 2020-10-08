@@ -123,7 +123,7 @@ module.exports = {
             await page.setCacheEnabled(false)
 
             await page.goto('http://localhost:3000');
-            const loginInput = await page.$('.ant-input');
+            const loginInput = await page.$$('.ant-input');
             console.log(loginInput);
             await page.focus('.ant-input');
             await page.waitFor(500);

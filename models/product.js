@@ -67,7 +67,7 @@ module.exports = (Sequelize, DataTypes) => {
         },
         default: {
             type: DataTypes.BOOLEAN, 
-            allowNull: true,
+            allowNull: false,
             comment: '是否默认配置'
         },
         color: {
